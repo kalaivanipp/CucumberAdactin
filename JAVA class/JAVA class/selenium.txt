@@ -1,0 +1,117 @@
+Selenium :
+
+findElement vs findElements
+
+close vs quit
+
+Session : 
+
+real browser version ---> .exe file version ---> session created
+
+real browser version ---> .exe file version ---> mismatch ----> session not created
+
+driver.quit() ----> session terminate
+
+get vs navigate
+
+locators 
+
+most used locator 
+
+why id unique ? ---> According to W3C id = "unique value" 
+
+why xpath ?  ----> id = alpha-numeric , login_17
+
+absolute vs relative
+
+customized Xpath axes
+
+Alternative for sendKeys()
+
+alternative for click()
+
+getText vs get Attribute
+
+getText() ---------> retrieve the text in a webpage
+
+getAttribute()
+
+		getAttribute("attributename") ----> return attribute value
+
+		getAttribute("value") -----> retrieve the passed value 
+
+
+cssValue()
+
+frame parameters
+
+Parentframe vs default content
+
+WebPage : 
+
+
+
+Frame 1 : 
+
+		
+	Frame 2 : 
+
+	
+			Frame 3 : 
+
+				WE 3 
+
+			Frame 4 : 
+
+Dropdown
+
+Actions Class
+
+different types of wait / Synchronization
+
+syntax 
+
+JavascriptExecutor
+
+	scroll up/down
+
+	click(), sendKeys()
+
+Robot Class
+
+Windows Handling
+
+what are the exceptions you faced in your project ?
+
+Object repository : 
+
+How do you customize your browser section ?
+
+					Desired Capabilities  ( deprecated ) 
+
+					Chrome Options  
+Broken Links :
+
+Highlight a webelement
+
+
+multiple window handle
+
+String parentid = driver.getWindowHandle();
+
+Set<String> allid = driver.getWindowHandles();
+
+for(String id : allid){
+
+	if(id != parentid){
+
+
+		driver.switchTo().window(id);
+
+	}
+
+
+
+}
+
+

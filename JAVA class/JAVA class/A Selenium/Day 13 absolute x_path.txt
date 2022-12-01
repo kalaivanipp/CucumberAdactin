@@ -1,0 +1,35 @@
+Absolute x-Path:
+
+->It Starts with single forward slash (/)
+
+->It Starts from html tag.(ROOT TAG)
+
+Demo site: http://demo.guru99.com/test/selenium-xpath.html
+
+Ex: /html/body/div[2]/div[1]/div/h4[1]/b[1]
+
+
+<html>--> open
+
+</html>--> close
+
+
+
+
+
+
+
+
+
+Interview based QA :
+
+1. What is the difference between relative and absolute xpath
+
+2. What are the ways of finding the element using xpath
+
+3. Which is preferable ? absolute or relative ? which will u choose?
+
+
+
+
+

@@ -1,0 +1,72 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.2
+Build-Jdk-Spec: 17
+Automatic-Module-Name: org.eclipse.m2e.maven.runtime.slf4j.simple
+Bundle-ClassPath: .,jars/slf4j-simple-1.7.36.jar
+Bundle-Description: This bundle provides SLF4j implementation and config
+ uration required to run m2e embedded Maven runtime   in external JVM. T
+ his bundle is NOT a general purpose slf4j-simple OSGi bundle, it does N
+ OT export   any packages and it CANNOT be used as an OSGI SLF4J impleme
+ ntation.   This is suboptimal and a better solution would be to either 
+ include slf4j-simple as a resource in org.eclipse.m2e.maven.runtime or 
+ use SLF4J implementation of the running m2e instance. I could not find 
+ an easy way to implement either of the better solutions, so this one wi
+ ll have to do for now.  This bundle is referenced as Require-Bundle by 
+ org.eclipse.m2e.maven.runtime to force installation of this bundle when
+ ever m2e embedded maven runtime is installed. Because no packages are e
+ xported, this does not pollute OSGi classpath. Provide-Capability/Requi
+ re-Capability would be cleaner, but I don't know if these are supported
+  bu P2.
+Bundle-Developers: eu;name="Eugene Kuleshov";organization="Sonatype Inc.
+ ";timezone=-5,jvanzyl;name="Jason van Zyl";organization="Sonatype Inc."
+ ;timezone=-8,vsiveton;email="vsiveton@apache.org";name="Vincent Siveton
+ ";organization=ASF;timezone=-5,ifedorenko;name="Igor Fedorenko";organiz
+ ation="Sonatype Inc.";timezone=-5,akraev;name="Anton Kraev";timezone=-5
+ ,hboutemy;name="Hervé Boutemy",krel;name="Lukáš Křečan",bentmann;n
+ ame="Benjamin Bentmann";organization="Sonatype Inc.",dip;name="Dmitry P
+ latonoff";organization="Sonatype Inc.",rseddon;name="Rich Seddon";organ
+ ization="Sonatype Inc.",mkleint;name="Milos Kleint";organization="Sonat
+ ype Inc.",prapicau;name="Pascal Rapicault";organization="Sonatype Inc."
+ ,ptatavu;name="Vlad Tatavu";organization="Sonatype Inc.",rgould;name="R
+ ichard Gould";organization="Sonatype Inc.",fbricon;name="Fred Bricon";t
+ imezone="+1"
+Bundle-DocURL: https://www.eclipse.org/m2e/m2e-maven-runtime/org.eclipse
+ .m2e.maven.runtime.slf4j.simple
+Bundle-License: "Eclipse Public License - v 2.0";link="https://www.eclip
+ se.org/legal/epl-v20.html"
+Bundle-ManifestVersion: 2
+Bundle-Name: M2E SLF4J-Simple Binding for Embedded Maven Runtime
+Bundle-SCM: connection="scm:git:https://github.com/eclipse-m2e/m2e-core.
+ git/m2e-maven-runtime/org.eclipse.m2e.maven.runtime.slf4j.simple",devel
+ oper-connection="scm:git:git@github.com:eclipse-m2e/m2e-core.git/m2e-ma
+ ven-runtime/org.eclipse.m2e.maven.runtime.slf4j.simple",tag=HEAD
+Bundle-SymbolicName: org.eclipse.m2e.maven.runtime.slf4j.simple
+Bundle-Vendor: Eclipse.org - m2e
+Bundle-Version: 1.18.2.20220615-0811
+Eclipse-BundleShape: dir
+Private-Package: jars,org.slf4j.impl
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Eclipse-SourceReferences: scm:git:https://github.com/eclipse-m2e/m2e-cor
+ e.git;path="m2e-maven-runtime/org.eclipse.m2e.maven.runtime.slf4j.simpl
+ e";commitId=455f56f58986718b8813fdb5e2fe6abd791452b1
+
+Name: about_files/slf4j-simple-LICENSE.txt
+SHA-256-Digest: P3q9nlAlNcbxGkr5Hc/SDRlvR7DAA2QMYTQwgIP2Knw=
+
+Name: about.html
+SHA-256-Digest: zazZm/tWZ2YG3QqOUbdI8adiQIXl5bsrKpIte+GZQDE=
+
+Name: simplelogger.properties
+SHA-256-Digest: bMbuK4YPLw2O0d9/j4QIXsJvHzwA6SwzVfxtY2KKOMs=
+
+Name: jars/slf4j-simple-1.7.36.jar
+SHA-256-Digest: Lzm+2UPWJN+o9BAtBXEoOhCHC2qjbxl6ilBvFHAQwQ8=
+
+Name: META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.maven.runtime.slf4j
+ .simple/pom.properties
+SHA-256-Digest: ObQvMAbgxA+IUm3WIBaVmygM38ZkL1RwfBAKBxfWBXs=
+
+Name: META-INF/maven/org.eclipse.m2e/org.eclipse.m2e.maven.runtime.slf4j
+ .simple/pom.xml
+SHA-256-Digest: IOnas6g1ufrinIHfdlbSiRqKJRZI340YLRBT9MfbfBM=
+

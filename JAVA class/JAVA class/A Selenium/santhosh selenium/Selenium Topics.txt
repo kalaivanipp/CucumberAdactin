@@ -1,0 +1,52 @@
+Selenium : 
+
+Day 1 : Intro, Browser Launch  
+
+Day 2 : Webdriver Methods ---> 
+
+Day 3 : Locators , WebElement , Sleep ---> DOM, id, name  eg : facebook , ( Takes Screenshot)
+
+Day 4 : Relative X-Path :
+
+			attributeName  = "value"
+
+			text()
+
+			contains(attributeName,attributeValue)
+
+			contains(text())
+
+			index
+
+Day 5 : WebElement Methods , ( Takes Screenshot ) 
+
+Day 6 : Single Dropdown , (Multiple dropdown )
+
+Day 7 : Alert
+
+Day 8 : Frame
+
+Day 9 : Actions , Robot Class -----> Amazon Task
+
+Day 10 : Windows Handling
+
+Day 11 : JavaScript Executor, Drag and Drop, Wait , Task ---> Mini Project 
+
+Day 12 : Absolute X Path
+
+Day 13 : WebTable
+
+Day 14 : Dynamic X Path
+
+Day 15 : Dynamic Web Table
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+3 Weeks 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+

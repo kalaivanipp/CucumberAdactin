@@ -1,0 +1,106 @@
+Selenium :
+
+	 It is a automation testing tool.(web application)
+
+ Jason Huggins --> 2004 
+
+QTP -> windows -> HP --> Quick test Professional.
+
+Version : 3.141.59
+ 
+
+Selenium Components/Suites :
+
+			Selenium IDE 
+
+			Selenium RC
+
+			"Selenium WebDriver"
+
+			Selenium Grid
+
+
+**********************************************************************************************************************
+Selenium IDE :
+
+		IDE - > Integrated Development Environment
+
+		It Can be Used Only in FireFox .
+
+		We Cannot be Used For Compliment Test Cases.
+
+
+Selenium RC :
+
+		RC - > Remote Control
+
+		In RC the installations are complicated.
+
+		It Cannot Directly Interact With Browser.
+
+
+Selenium WebDriver :
+
+		   It is a automation testing framework.
+
+		   It Supports Different Browsers Along With Different Kind Of Programming languages.
+
+		   It Directly Interact With Browser.
+	
+Selenium Grid : 
+
+		It Is A HubNode Concept.
+
+		It Execute Test Cases Parallely And It Reduces The Execute Time.
+
+
+*******************************************************************************************************************
+
+
+             				    HOW TO DOWNLOAD SELENIUM
+
+Steps : 
+
+	First Download Selenium Standard Version Jar.
+
+	Add The Jar Into Our Project . Right Click In Project ---->  Build path -----> Configure Build Path
+ -------> Add External Jar In Libraries.
+
+	Create A Driver Folder in Eclipse .
+
+	Download ChromeDriver.exe file 	
+
+	Extract That Zip  File And Copy The File And paste into Driver Folder.
+
+
+
+***********************************************************************************************************************************************************************************
+                           
+
+Browser Launch : 
+ 
+	                Chrome                          IE                         FireFox
+
+Driver name            webdriver.chrome.driver      webdriver.ie.driver        webdriver.gecko.driver
+
+
+
+File Name              chromedriver.exe             IEDriverServer.exe            geckodriver.exe
+
+
+Class Name             ChromeDriver()              InternetExplorerDriver()       FirefoxDriver()
+
+
+
+ 
+	
+
+
+
+
+
+
+		
+
+
+		

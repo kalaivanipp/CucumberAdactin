@@ -1,0 +1,45 @@
+public static void main(String[] args) {
+		Launch("chrome");
+		url("https://adactinhotelapp.com/");
+		
+		//Login Page
+	
+		Login_POM l=new Login_POM(driver);		
+		tosendKeys(l.getusername(),"KalaivaniGreens");
+		tosendKeys(l.getpassword(),"Kalai@Adactin");
+		l.getLogin().click();		
+		//Search Hotel Room
+		Adactic_search_Hotel_POM sh=new Adactic_search_Hotel_POM(driver);
+		Drop_DownBox(sh.getLocation(),"index","2");		
+		Drop_DownBox(sh.getHotel(),"index","1");
+		Drop_DownBox(sh.getRoom(),"value","Double");
+		Drop_DownBox(sh.getNumofroom(),"text","2 - Two");
+		sh.getCheckindate().click();
+		sh.getCheckindate().clear();
+		tosendKeys(sh.getCheckindate(),"12/10/2022");
+		sh.getCheckindate().click();
+		sh.getCheckoutdate().clear();
+		tosendKeys(sh.getCheckoutdate(),"22/10/2022");          
+		Drop_DownBox(sh.getAdultroom(), "text","3 - Three");
+		Drop_DownBox(sh.getChildroom(), "text","4 - Four");
+        sh.getSearchbutton().click();        
+        sh.getSelradio().click();
+        sh.getContinu().click(); 
+		//Book A Hotel
+        tosendKeys(sh.getFname(),"Kalaivani");
+        tosendKeys(sh.getLname(), "Pandu Rangan");
+        tosendKeys(sh.getAddress(), "11-101, Yogimallavaram, Tiruchanoor Post");
+        tosendKeys(sh.getCardnum(), "4321 8765 9123 4567");
+        Drop_DownBox(sh.getCctype(), "text","American Express");
+        Drop_DownBox(sh.getCardexpm(), "text","December");
+        Drop_DownBox(sh.getCardexpy(), "text","2022");
+		tosendKeys(sh.getCvv(),"1234");
+		sh.getBooknow().click();
+		Wait();
+		takeScreenShot("kalaiAdact");
+		
+		                           }
+	
+	}
+
+	

@@ -1,0 +1,106 @@
+Iterative Statements:
+   	While
+	Do-while
+	For 
+	For-each
+
+*While:
+    Entry loop level condition checking.
+
+syntax: while (condition){    
+      //code to be executed   
+    increment / decrement statement  
+
+    }   
+
+*Do - While:
+     Exit level condition checking 
+
+syntax: do{    
+         //code to be executed / loop body  
+        }while (condition); 
+
+*For Loop:
+       Execute based on the iteration
+       For loop and Nested For Loop.	
+
+syntax: for(initialization; condition; increment/decrement){    
+          //statement or code to be executed    
+        }   
+
+*Nested For Loop:
+           Contains inner and outer Loop          
+
+syntax: for(initialization; condition; increment/decrement){    
+           //statement or code to be executed    
+        for(initialization; condition; increment/decrement){    
+           //statement or code to be executed    
+          }   
+        }   
+
+
+*For Each or Enhanced For Loop:
+                         print each element of the numbers array one by one [i-->eachitem array---->target]
+  
+   string array[] = {10,22,31,34,15};
+
+syntax: for(datatype i:array){    
+          //statement or code to be executed    
+        }   
+====================================================================================================================================================================
+Selection Statements:
+
+*IF Statement:
+       	It will go inside the block only if the condition is true otherwise, it will not execute the block.
+
+syntax: if(condition) {    
+          statement 1; [true]
+        }    
+
+*If-Else Statement:
+        If the condition is true then, it will execute the If block. Otherwise, it will execute the Else block.
+
+syntax: if(condition) {    
+         statement 1; [true]   
+        }  
+        else{  
+         statement 2; [false]   
+        } 
+
+*Nested if-statement
+	It Contain an if or if-else statement inside another if or else-if statement.
+
+syntax: if(condition 1) {    
+           statement 1; [ condition 1 is true]
+             if(condition 2) {  
+                  statement 2; [ condition 2 is true] 
+              }  
+               else{  
+                  statement 2; [condition 2 is false]   
+              }
+       }
+       else{
+          statement 1; [ condition 1 is false]
+       }
+
+*If-else-if
+	 if-statement followed by multiple else-if statements
+
+syntax: if(condition 1) {    
+          statement 1; [condition 1 is true]   
+        }  
+        else if(condition 2) {  
+          statement 2; [ condition 2 is true]   
+        }  
+        else if(condition 3) {  
+          statement 3; [ condition 2 is true]   
+        }  
+       else {  
+          statement 2; [all conditions are false]  
+       }
+=================================================================================================================================================
+Jump Statement:
+
+*Break; -----> It will exit from the loop
+*Continue; -----> It will skip the particular iteration
+*Return; -----> It will return the value given

@@ -1,0 +1,58 @@
+Abstract Class vs Interface
+
+Overload Vs Override
+
+Hashmap Vs Hash Table
+
+HashSet Vs HashMap
+
+List vs Set vs Map
+
+Array vs ArrayList
+
+ArrayList vs Linkedlist
+
+Exception Handling
+
+Static Keyword
+
+Constructor
+
+Mutable vs Immutable
+
+StringBuffer vs String Builder
+
+Why String Immutable ?
+
+Multiple Inheritance Possible ?
+
+constant variable ( final ) 
+
+Final, Finally, Finalize
+
+Throw vs Throws
+
+this vs super
+
+public vs protected
+
+Map
+
+== vs .equals
+
+user defined exception / Custom Exception
+
+Explain main method syntax? And, Can we change it?
+
+Features of Java 1.8?
+
+Enum or Enumerator?
+
+Can static method be overridden?
+
+Collection vs. Collections?
+
+How to terminate the finally block
+
+System.exit(0); (-1,1)
+

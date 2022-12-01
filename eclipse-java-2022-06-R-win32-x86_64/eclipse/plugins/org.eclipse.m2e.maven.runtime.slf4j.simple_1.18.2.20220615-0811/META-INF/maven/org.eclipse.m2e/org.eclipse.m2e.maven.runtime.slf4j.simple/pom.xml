@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.eclipse.m2e</groupId>
+    <artifactId>m2e-maven-runtime</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>org.eclipse.m2e.maven.runtime.slf4j.simple</artifactId>
+  <version>1.18.2-SNAPSHOT</version>
+  <packaging>eclipse-plugin</packaging>
+  <name>M2E SLF4J-Simple Binding for Embedded Maven Runtime</name>
+  <description>This bundle provides SLF4j implementation and configuration required to run m2e embedded Maven runtime
+  in external JVM. This bundle is NOT a general purpose slf4j-simple OSGi bundle, it does NOT export
+  any packages and it CANNOT be used as an OSGI SLF4J implementation.
+
+  This is suboptimal and a better solution would be to either include slf4j-simple as a resource in
+  org.eclipse.m2e.maven.runtime or use SLF4J implementation of the running m2e instance. I could not
+  find an easy way to implement either of the better solutions, so this one will have to do for now. 
+
+  This bundle is referenced as Require-Bundle by org.eclipse.m2e.maven.runtime to force installation
+  of this bundle whenever m2e embedded maven runtime is installed. Because no packages are exported,
+  this does not pollute OSGi classpath. Provide-Capability/Require-Capability would be cleaner, but
+  I don't know if these are supported bu P2.</description>
+  <properties>
+    <slf4j-simple.version>1.7.36</slf4j-simple.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.36</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <version>[1.0.0,)</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.m2e</groupId>
+      <artifactId>org.eclipse.m2e.maven.runtime.slf4j.simple</artifactId>
+      <version>1.18.2.qualifier</version>
+      <type>eclipse-plugin</type>
+      <classifier>jars/slf4j-simple-1.7.36.jar</classifier>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.m2e</groupId>
+      <artifactId>org.eclipse.m2e.maven.runtime.slf4j.simple.source</artifactId>
+      <version>1.18.2.qualifier</version>
+      <type>eclipse-plugin</type>
+      <classifier>jars/slf4j-simple-1.7.36.jar</classifier>
+      <scope>provided</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>

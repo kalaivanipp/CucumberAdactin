@@ -1,0 +1,86 @@
+String :
+
+Collection Of Group Of Words Or Special Characters Must Enclosed With in The Double Quotes.
+
+It is A Index Based.
+
+it is a non-primitive datatype also. 
+
+
+String Functions Or Manipulation :
+
+String s = " 	Welcome To Java";
+string s1 ="";
+
+1.s.length()
+
+2.s.equals()
+
+3.s.equalsIgnoreCase()
+
+4.s.toUpperCase()
+
+5.s.toLowerCase()
+
+6.s.startsWith()
+
+7.s.endsWith()
+
+8.s.contains()
+
+9.s.indexOf()  //----> value   sandhiya
+
+10.s.lastIndexOf() //----> value
+
+11.s.charAt() //---> index
+
+12.s.replace() 
+
+13.s.subString()
+
+14.s.isEmpty()
+
+15.s.split()
+
+16.s.trim()
+
+17.s.concat()
+
+
+ASCII Values :
+
+American Standard Code For Information interchange
+
+
+A to Z ------> 65 to 90
+
+a to z ------> 97 to 122
+
+
+0 to 9 -----> 48 to 57
+
+same occurance and same legnth 
+the ouput is 0
+
+same occurance and different length
+the output will be based on length
+
+
+different ocuurance and same length 
+the output will be based on first differing character
+
+
+different ocuurance and different length 
+the output will be based on first differing character
+
+
+abi
+moniga
+swathi
+saravanan
+shyam
+janani
+deepak
+shalini
+rubesh
+pavithra

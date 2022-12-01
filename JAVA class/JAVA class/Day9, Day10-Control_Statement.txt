@@ -1,0 +1,81 @@
+Control Statement : 
+
+Looping statement :
+
+		for loop 
+            nested for 
+
+		while loop
+
+		do-while loop
+for loop :
+  
+      for(initilization ; condition;iteration){
+
+		Action
+
+}
+
+initilization : -> Starting point
+
+condition : end point
+
+iteration : flow 
+	forward  -> increment  -> ++
+	backward -> decrement  -> --
+
+
+while loop : 
+
+
+	Entry Level Condition Checking
+
+do-while loop: 
+
+	Exit Level Condition Checking
+
+
+Selection Statement (or) condition statement : 
+
+		if -->it should print if the condition is true.
+
+		elseif -->it is performed after the if statement.
+
+		else -->it should print if if condition is true.
+
+		switch -->more than a condition.
+
+
+
+=   -> initilization
+
+==  -> condition checking
+
+Logical Operators : 
+
+&& -> Both Conditions must be Satisfied  (Logical AND)
+
+|| -> either one condition   (logical OR )
+
+
+
+Jumping Statement : 
+
+
+break  -> it will exit from the loop
+
+
+continue -> it will skip the particular iteration
+
+
+
+Pre-Increment  ->
+
+		++ variableName    -> 1+(variableValue)
+
+
+Post-Increment  ->     
+                
+                variableName++    -> (variableValue)+1
+
+`	        In step it will add the value

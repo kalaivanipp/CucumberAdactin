@@ -1,0 +1,75 @@
+Actions:  Action - Interface
+
+	It is a class
+	It Performs the mouse and keyboard actions.
+
+
+Syntax : 
+
+	Actions objName = new Actions(driver);
+
+
+
+Mouse based actions : 
+
+		click[WebElement] - clicks at current mouse location.
+
+		contextClick [WebElement]- performs Right click
+
+		doubleClick [WebElement]- performs double click
+
+		moveToElement[WebElement] - moves the mouse pointer from one element to other element.
+
+		dragAndDrop[WebElement Source , WebElement Target]- drags the element from one point and drops in another point.
+
+                clickAndHold [WebElement]- performs long click and holds without releasing it.
+
+                release() - To release an element that has been in hold by the mouse.
+
+
+For mouse based actions methods :
+
+		IMP :	  	We must give build() and perform(). 
+
+
+				build() ---> all the actions gathered which are ready to be performed.
+
+				perform() ----> perform a sequence of actions.
+
+
+***********************************************************************************************************************
+Keyboard based action : 
+
+Robot class: (AWT)
+
+It can be used to trigger the input keyboard and mouse events
+like mouse move, mouse click, Keypress ANd Key  Release.
+
+KeyEvent -> is a class and it performs the keyboard function.
+
+ 
+->It is a part of java api awt package
+
+Syntax:
+
+Robot ref = new Robot());
+
+ r.keyPress(KeyEvent.anyfunction) 
+ r.keyRelease(KeyEvent.anyFunction)
+
+r.keyPress(KeyEvent any function) 
+r.keyRelease(KeyEvent.anyFunction)
+
+
+example:
+
+r.keyPress(KeyEvent.VK_Down); 
+r.keyRelease(KeyEvent.VK_Down);			
+
+
+***********************************************************************************************************************
+
+	https://demoqa.com/		
+
+
+
